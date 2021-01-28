@@ -18,11 +18,11 @@ driver.get('https://academia.srmist.edu.in/accounts/signin?_sh=false&hideidp=tru
 first_result = wait.until(presence_of_element_located((By.ID, 'Email')))
 Username = driver.find_element_by_id("Email")
 # add your registeration number.
-Username.send_keys("aditya_ravishankar3@srmuniv.edu.in")
+Username.send_keys("Email Id")
 
 Password = driver.find_element_by_id("Password")
 # add your password number.
-Password.send_keys("Montecarlo@310")
+Password.send_keys("Passowrd")
 
 driver.find_element_by_css_selector(".btn").click()
 time.sleep(5)
